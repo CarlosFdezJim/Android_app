@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDatos> {
 
-    ArrayList<String> listEquipos;
+    ArrayList<Equipo> listEquipos;
 
-    public AdapterDatos(ArrayList<String> listEquipos) {
+    public AdapterDatos(ArrayList<Equipo> listEquipos) {
         this.listEquipos = listEquipos;
     }
 
@@ -30,10 +30,12 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderDatos holder, int position) {
-        holder.asignarDatos(listEquipos.get(position));
+        Equipo equipo = listEquipos.get(position);
+        holder.asignarDatos(equipo);
     }
 
     @Override
+    //Devuelve el tamaño del ArrayList de Equipos.
     public int getItemCount() {
         return listEquipos.size();
     }
@@ -46,8 +48,8 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
             equipo = itemView.findViewById(R.id.idEquipos);
         }
 
-        public void asignarDatos(String equipos) {
-            equipo.setText(equipos);
+        public void asignarDatos(Equipo equipos) {
+            equipo.setText((CharSequence) equipos);
         }
     }
 }

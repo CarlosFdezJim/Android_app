@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Xilofono</string>
+    <string name="DO">DO</string>
+    <string name="SI">SI</string>
+    <string name="LA">LA</string>
+    <string name="FA">FA</string>
+    <string name="MI">MI</string>
+    <string name="RE">RE</string>
+    <string name="SOL">SOL</string>
+</resources>

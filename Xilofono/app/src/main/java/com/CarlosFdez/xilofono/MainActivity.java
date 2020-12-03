@@ -23,37 +23,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void reproducirDo(View view){
-        button = (Button) findViewById(R.id.button);
+        button = findViewById(R.id.button);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note1);
         mpButton.start();
     }
     public void reproducirRe(View view){
-        button2 = (Button) findViewById(R.id.button2);
+        button2 = findViewById(R.id.button2);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note2);
         mpButton.start();
     }
     public void reproducirMi(View view){
-        button3 = (Button) findViewById(R.id.button3);
+        button3 = findViewById(R.id.button3);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note3);
         mpButton.start();
     }
     public void reproducirFa(View view){
-        button4 = (Button) findViewById(R.id.button4);
+        button4 = findViewById(R.id.button4);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note4);
         mpButton.start();
     }
     public void reproducirSol(View view){
-        button5 = (Button) findViewById(R.id.button5);
+        button5 = findViewById(R.id.button5);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note5);
         mpButton.start();
     }
     public void reproducirLa(View view){
-        button6 = (Button) findViewById(R.id.button6);
+        button6 = findViewById(R.id.button6);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note6);
         mpButton.start();
     }
     public void reproducirSi(View view){
-        button7 = (Button) findViewById(R.id.button7);
+        button7 = findViewById(R.id.button7);
         MediaPlayer mpButton =  MediaPlayer.create(this,R.raw.note7);
         mpButton.start();
     }

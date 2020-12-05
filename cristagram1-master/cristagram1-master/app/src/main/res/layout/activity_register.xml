@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+    <!-- TODO(6):  COMPLETED Crear un ImageView con alto 50dp y que muestre drawable logo-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"/>
+    <!-- TODO(7): COMPLETED Crear un EditText con altura ajustable y anchura completa, con fondo drawable/edittext_background, que muestre el Email, con un margen superior de 15 dp, un padding de 10dp y como id "username"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:text="@string/prompt_email"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/username"/>
+    <!-- TODO(8): COMPLETED Crear un EditText con altura ajustable y anchura completa, con fondo drawable/edittext_background, que muestre el Nombre completo, con un margen superior de 15 dp, un padding de 10dp y como id "fullname"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:text="@string/full_name"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/fullname"/>
+    <!-- TODO(9): COMPLETED Crear un EditText con altura ajustable y anchura completa, con fondo drawable/edittext_background, que muestre el  nombre de usuario, con un margen superior de 15 dp, un padding de 10dp y como id "email"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:text="@string/username"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/email"/>
+    <!-- TODO(10): COMPLETED Crear un EditText con altura ajustable y anchura completa, de tipo password con fondo drawabel/edittext_background, que muestre la contraseña, con un margen superior de 15 dp, un padding de 10dp y como id "password"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:text="@string/password"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/password"/>
+    <!-- TODO(11): COMPLETED Crear un Button con altura ajustable y anchura completa, con fondo drawable/button_background, con texto Registro, color de fuente blanco, fondo y margen superior 15dp -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="15dp"/>
+    <!-- TODO(12): COMPLETED Crear un TextView con altura ajustable y anchura completa, con id "txt_login", que pregunte si tiene una cuenta ya el usuario y tenga un margen superior de 10dp -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_signup"
+        android:text="@string/signup"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

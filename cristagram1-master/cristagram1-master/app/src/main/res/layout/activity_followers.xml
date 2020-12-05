@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FollowersActivity">
+
+    <!-- TODO(26): COMPLETED Crear un androidx.appcompat.widget.Toolbar, con anchura completa y altura ajustable con id "toolbar" y con fondo "?android:attr/windowBackground" -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?android:attr/windowBackground"/>
+    <!-- TODO(27): COMPLETED Crear un androix Recylerview con altura ajustable y ancho completo, con id "recycle_view" e id "toolbar"-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/toolbar"/>
+
+</RelativeLayout>

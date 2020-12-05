@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+    <!-- TODO(1): COMPLETED Crear un ImageView con alto 50dp y que muestre drawable logo-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"/>
+    <!-- TODO(2): COMPLETED Crear un EditText con altura y anchura ajustable, con fondo drawabel/edittext_background, que muestre el Email, con un margen superior de 15 dp, un padding de 10dp y como id "username"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/username"
+        android:text="Email" />
+    <!-- TODO(3): COMPLETED Crear un EditText de tipo contraseña con altura y anchura ajustable, con fondo drawabel/edittext_background, que muestre la contraseña, con un margen superior de 15 dp, un padding de 10dp y como id "password"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:id="@+id/password"
+        android:text="@string/password"/>
+    <!-- TODO(4): COMPLETED Crear un Button, con id "login", con el texto correspondiente, con color blanco de fuente, fondo drawable/button_background y margen superior 15dp -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="15dp"
+        />
+    <!-- TODO(5): COMPLETED Crear un TextView con tamaño ajustable, con id "txt_signup" y con margen superior 10dp -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_signup"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

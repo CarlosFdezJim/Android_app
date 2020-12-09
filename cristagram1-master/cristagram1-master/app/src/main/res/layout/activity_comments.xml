@@ -17,11 +17,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_above="@id/bottom"/>
-    <!-- TODO(30): ¿? alineado en el fondo del elemento padre COMPLETED Al RelativeLayout que sigue este todo, añadirle un fondo blanco, un padding de 4dp y que esté alineado en el fondo del elemento padre -->
+    <!-- TODO(30): COMPLETED Al RelativeLayout que sigue este todo, añadirle un fondo blanco, un padding de 4dp y que esté alineado en el fondo del elemento padre -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
         android:background="@color/colorWhite"
         android:padding="4dp"
         android:layout_centerInParent="true"/>
@@ -31,11 +32,11 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id="@+id/imagen_profile"/>
-        <!-- TODO(32): ¿FONDO? COMPLETED Crear un elemento EditText de fondo transparente, con altura ajustable, ancho total, que muestre de texto "añadir un comentario" y los siguientes atributos-->
+        <!-- TODO(32): COMPLETED Crear un elemento EditText de fondo transparente, con altura ajustable, ancho total, que muestre de texto "añadir un comentario" y los siguientes atributos-->
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background=""
+            android:background="@android:color/transparent"
             android:text="@string/add_comment"
             android:layout_toRightOf="@+id/image_profile"
             android:layout_centerVertical="true"

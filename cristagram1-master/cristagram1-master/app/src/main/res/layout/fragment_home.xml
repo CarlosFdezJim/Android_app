@@ -20,12 +20,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <!--TODO(18): ¿? COMPLETED Crear un ImageView con ancho 180dp y altura 35dp, que esté alineado con el inicio de su padre, con un margen izquierdo de -20dp y que contenga el logo -->
+                <!--TODO(18): COMPLETED Crear un ImageView con ancho 180dp y altura 35dp, que esté alineado con el inicio de su padre, con un margen izquierdo de -20dp y que contenga el logo -->
                 <ImageView
                     android:layout_width="180dp"
                     android:layout_height="35dp"
                     android:layout_alignParentStart="true"
-                    android:layout_alignLeft="-20dp"
+                    android:layout_marginLeft="-20dp"
                     android:src="@drawable/logo"/>
                 <!-- TODO(19): COMPLETED Crear un ImageView con altura y anchura ajustable, con id "inbox", que muestre drawable/ic_inbox, con id "inbox", un margen derecho de 10dp y con la propiedad alineado al final del elemento padre a true -->
                 <ImageView

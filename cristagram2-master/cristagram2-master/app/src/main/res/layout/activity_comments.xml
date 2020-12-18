@@ -5,54 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CommentsActivity">
-    <!-- TODO(28): COMPLETED Crear un androidx.appcompat.widget.Toolbar, con anchura completa y altura ajustable con id "toolbar" y con fondo "?android:attr/windowBackground" -->
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@id/toolbar"
+        android:id="@+id/toolbar"
         android:background="?android:attr/windowBackground"/>
-    <!-- TODO(29): COMPLETED Crear un androix Recylerview con altura ajustable y ancho completo, con id "recycle_view" e id "toolbar" con layout_below "toolbar" y layout_above "bottom"-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/recycle_view"
         android:layout_below="@+id/toolbar"
-        android:layout_above="@id/bottom"/>
-    <!-- TODO(30): COMPLETED Al RelativeLayout que sigue este todo, añadirle un fondo blanco, un padding de 4dp y que esté alineado en el fondo del elemento padre -->
+        android:layout_above="@+id/bottom">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bottom"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorWhite"
+        android:background="#fff"
         android:padding="4dp"
-        android:layout_centerInParent="true"/>
+        android:layout_alignParentBottom="true">
 
-        <!-- TODO(31): COMPLETED Crear un elemento de.hdodenhof.circleimageview.CircleImageView con altura y anchura de 40dp, y con id "image_profile"-->
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/imagen_profile"/>
-        <!-- TODO(32): COMPLETED Crear un elemento EditText de fondo transparente, con altura ajustable, ancho total, que muestre de texto "añadir un comentario" y los siguientes atributos-->
+            android:id="@+id/image_profile"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:text="@string/add_comment"
             android:layout_toRightOf="@+id/image_profile"
+            android:hint="@string/add_comment"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:id="@+id/add_comment"
+            android:background="@android:color/transparent"
             android:layout_toLeftOf="@+id/post"/>
-        <!-- TODO(33): COMPLETED Crear un elemento TextView con altura y anchura ajustable, con id "post", con color de texto colorPrimaryDark y los siguientes atributos-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/post"
-            android:textColor="@color/colorPrimaryDark"
             android:text="@string/post"
             android:layout_marginEnd="5dp"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
